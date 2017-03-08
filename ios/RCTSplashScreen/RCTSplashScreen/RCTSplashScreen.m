@@ -21,6 +21,8 @@ RCT_EXPORT_MODULE(SplashScreen)
     rootView = v;
 
     UIImageView *view = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+
+    [view setContentMode:UIViewContentModeScaleAspectFill];
     
     view.image = [UIImage imageNamed:imageName];
     
